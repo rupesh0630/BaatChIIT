@@ -1,0 +1,72 @@
+#emoji{
+    margin-left: 1vw;
+    background: linear-gradient(87.29deg, #3B41C5 0%, #51298B 100%);
+    border-radius: 100%;
+    height: 4.1rem;
+    width: 4.1rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.9vw;
+}
+
+#send{
+    height: 1.7rem;
+    width: 2rem;
+    padding-left: 0.2vw;
+
+}
+
+input.ui.input:focus{
+    outline: none;
+}
+
+::placeholder{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    color: #A7A7A7;
+}
+
+input.ui.input{
+    width: 50vw;
+    background: #F0F0F0;
+    border-radius: 4.5rem;
+    border: none;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2rem;
+    padding-left: 2rem;
+    transition: all 0.5s ease;
+}
+
+input.not.ui.input{
+    width: 50vw;
+    background: #181818;
+    color: white;
+    border-radius: 4.5rem;
+    border: none;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2rem;
+    padding-left: 2rem;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 500px){
+    input.not.ui.input,input.ui.input{
+        width: 74vw;
+    }
+
+    #emoji{
+        margin-left:1vw ;
+    }
+
+}

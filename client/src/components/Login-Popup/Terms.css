@@ -1,0 +1,8 @@
+#TermsText{
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+div#TermsText:hover{
+    cursor: pointer;
+}

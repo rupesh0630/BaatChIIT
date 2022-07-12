@@ -1,0 +1,61 @@
+.me{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.other{
+    display: flex;
+    justify-content: flex-start;
+}
+#right{
+    font-family: Open Sans;
+    color: white;
+    font-style: normal;
+    padding: 0.6rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 0.1rem;
+    border: 2px solid #461EB8;
+    border-radius: 0.5rem;
+    background: #461EB8;
+    max-width: 35rem;
+    overflow-wrap: break-word;
+    /* identical to box height */
+
+
+    /* color: rgba(241, 241, 242, 0.95); */
+}
+
+#left{
+    font-family: Open Sans;
+    color: black;
+    font-style: normal;
+    padding: 0.6rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 0.1rem;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    background: white;
+    max-width: 35rem;
+    overflow-wrap: break-word;
+    transition: all 0.5s ease;
+}
+#not_left{
+    font-family: Open Sans;
+    background: black;
+    color: white;
+    font-style: normal;
+    padding: 0.6rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 0.1rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    max-width: 35rem;
+    overflow-wrap: break-word;
+    transition: all 0.5s ease;
+}

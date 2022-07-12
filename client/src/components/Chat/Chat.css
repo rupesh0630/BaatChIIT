@@ -1,0 +1,239 @@
+#container{
+    width: 82vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.space1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+    flex-wrap: wrap;
+}
+
+.spaceInput{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+
+#div{
+    background: white;
+    transition: all 0.5s ease;
+    height: 100vh;
+}
+#not_div{
+    background: black;
+    transition: all 0.5s ease;
+    height: 100vh;
+}
+
+.space2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+#typing{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    width: 56vw;
+}
+#not_typing{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    width: 56vw;
+    color: white;
+}
+
+#findButton{
+    display: flex;
+    width: 22vw;
+    justify-content: center;
+}
+
+img.waitLogo{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+#space_left{
+    width: 22vw;
+    height: 75vh;
+    background: #F0F0F0;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+#not_space_left{
+    width: 22vw;
+    height: 75vh;
+    background:#181818;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+
+#space_right{
+    width: 56vw;
+    height: 75vh;
+    background: #F0F0F0;
+    border-radius: 23px;
+    transition: all 0.5s ease;
+}
+
+#not_space_right{
+    background: #181818;
+    width: 56vw;
+    height: 75vh;
+    border-radius: 23px;
+    transition: all 0.5s ease;
+}
+
+#typing_right{
+    height: 2rem;
+    width: 75vw;
+    display: flex;
+    width: 76rem;
+    background: #F0F0F0;
+    border-radius: 23px;
+}
+
+#waitMessage{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    text-align: center;
+    width: 20rem;
+    color: #919191;
+}
+
+#findButton_m{    
+    display: none;
+}
+
+                                  /*MEDIA QUERIES*/
+
+@media screen and (max-width: 560px) {
+
+    /* html {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        } */
+        html, body {
+            height:100%;
+          }
+          html {
+            overflow: hidden;
+        }
+        body {
+            overflow-y: scroll;
+            -webkit-overflow-scrolling:touch;
+        }
+    
+    #div{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        overflow: hidden;
+        transition: background 0.5s ease;
+    }
+
+    #not_div{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        overflow:hidden;
+        transition: background 0.5s ease;
+    }
+
+    #container{
+        position: fixed;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+
+    #findButton_m{
+        display:flex;
+        justify-content: center;
+        width: 100vw;                      
+        /* margin-top: 1vh; */
+    }
+
+    .space1{
+        width: 100vw;
+        transition: background 0.5s ease;
+    }
+    
+    #space_right{
+        border-radius: 0 ;
+        width: 100vw;
+        height: 68vh;                             /* changed*/
+        background: #F0F0F0;
+        transition: all 0.5s ease;
+        margin-top: 2vh;                          /* changed*/
+        transition: background 0.5s ease;
+    } 
+    
+    
+    #not_space_right{
+        width: 100vw;
+        height: 68vh;                             /* changed*/
+        background: #181818;
+        border-radius: 0;
+        transition: all 0.5s ease;
+        margin-top: 2vh;                          /* changed*/
+        transition: background 0.5s ease;
+    }
+    
+    .space2{
+        display: flex;   
+        justify-content: center;
+        width: 100vw;
+        
+    }
+    
+    .spaceInput{
+        display: flex;
+        justify-content: center;
+    }
+
+    #findButton{
+        display: none;
+    }
+
+    #not_space_left,#space_left{
+        display: none;
+    }
+    
+    #typing{
+        width: 100vw;
+    }
+    #not_typing{
+        width: 100vw;
+    }
+    
+}
+@media screen and (max-height: 600px){
+    #space_right{
+        height: 58vh;
+    }
+    #not_space_right{
+        height: 58vh;
+    }
+}

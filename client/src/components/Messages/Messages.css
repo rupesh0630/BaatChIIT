@@ -1,0 +1,37 @@
+#waitTop{
+  display: none;
+}
+
+.ScrollToBottom {
+    margin-top: 2vh;
+    padding:2vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 70.5vh;
+    
+}
+
+ .ScrollToBottom::-webkit-scrollbar {
+    display: none;
+  } 
+  
+
+  @media screen and (max-width: 560px) {
+    
+    .ScrollToBottom {
+      height: 64vh;                                  /*changed */
+    }
+
+    #waitTop{
+      display: flex;
+      justify-content: center;
+      font-size: 1.5rem;
+      color:#461EB8;
+      height: 3vh;
+    }
+  }
+  @media screen and (max-height: 600px){
+    .ScrollToBottom{
+        height: 54vh;
+    }
+ }
